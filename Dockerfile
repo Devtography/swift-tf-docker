@@ -1,4 +1,6 @@
 # Customised Swift for TensorFlow image with Python installed.
+FROM swift:5.1-bionic AS toolchain
+
 FROM ubuntu:latest
 
 LABEL \
@@ -31,6 +33,8 @@ RUN apt install -y curl pv \
     && apt remove -y curl pv \
     && apt autoremove -y \
     && apt clean
+
+COPY --from=toolchain /usr/bin/sourcekit-lsp usr/bin/sourcekit-lsp
 
 ENV PATH "/root/usr/bin:${PATH}"
 
