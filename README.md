@@ -1,10 +1,19 @@
 # Swift for TensorFlow - Docker
 
-<img src="images/logo.png" alt="Swift + TensorFlow logo" >
+<img src="https://github.com/iamWing/swift-tf-docker/blob/master/images/logo.png?raw=true" alt="Swift + TensorFlow logo" >
 
 ### An Ubuntu 18.04 Docker image for [Swift for TensorFlow].
 
 #### You can find the Docker Hub repo here: https://hub.docker.com/r/devtography/swift-tf
+
+### Supported tags & respective Swift for TensorFlow version
+
+| Tag           | Swift for TensorFlow |
+| ------------- | -------------------- |
+| 1.0.1, latest | v0.5.0 |
+| 1.0.0         | v0.5.0 |
+
+_* Append `-cuda` postfix for GPU supported images_
 
 ### Usage
 
